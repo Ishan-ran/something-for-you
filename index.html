@@ -407,14 +407,12 @@
 </head>
 <body>
 
-    <!-- PRE-LOADER -->
     <div id="loader">
         <div style="width: 150px; height: 150px;" id="lottieLoader"></div>
         <p style="font-family: 'Fredoka One'; color: #ff4d6d; margin-top: 10px; font-size: 1.5rem; animation: pulse 1s infinite;">Loading Love...</p>
     </div>
     <style>@keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.5;}}</style>
 
-    <!-- MUSIC TOAST -->
     <div id="musicToast">
         <span>🎵</span>
         <span id="toastText">Now Playing...</span>
@@ -499,7 +497,6 @@
                 </div>
             </div>
 
-            <!-- Player Controls -->
             <div class="playlist-footer">
                 <button class="ctrl-btn" onclick="previousTrack()">⏮</button>
                 <button class="ctrl-btn play-pause-btn" id="mainPlayBtn" onclick="pauseTrack()">⏸</button>
@@ -521,13 +518,11 @@
         </div>
     </div>
 
-    <!-- SCREEN 2 WITH NEW BUBBLE BUTTONS -->
     <div class="container hidden" id="screen2">
         <div style="height: 50px;"></div>
         <h1 class="shimmer-text">Yay! Choose a Gift:</h1>
         
         <div class="gift-grid">
-            <!-- Gift 1: Bloom -->
             <div class="gift-wrapper" onclick="openGift('gift1')">
                 <div class="gift-bubble">
                     <img src="1.png" alt="Bloom">
@@ -535,7 +530,6 @@
                 <div class="gift-label">Bloom</div>
             </div>
 
-            <!-- Gift 2: Letter -->
             <div class="gift-wrapper" onclick="openGift('gift2')">
                 <div class="gift-bubble">
                     <img src="2.png" alt="Letter">
@@ -543,7 +537,6 @@
                 <div class="gift-label">Letter</div>
             </div>
 
-            <!-- Gift 3: Unwrap -->
             <div class="gift-wrapper" onclick="openGift('gift3')">
                 <div class="gift-bubble">
                     <img src="3.png" alt="Unwrap">
@@ -551,17 +544,23 @@
                 <div class="gift-label">Unwrap</div>
             </div>
 
-            <!-- Gift 4: For Us -->
             <div class="gift-wrapper" onclick="window.location.href='https://ishan-ran.github.io/For-us/'">
                 <div class="gift-bubble">
                     <img src="4.png" alt="For Us">
                 </div>
                 <div class="gift-label">For Us</div>
             </div>
+
+            <div class="gift-wrapper" onclick="window.location.href='https://ishan-ran.github.io/smth-smth/'">
+                <div class="gift-bubble">
+                    <img src="5.png" alt="Poems">
+                </div>
+                <div class="gift-label">Poems</div>
+            </div>
+
         </div>
     </div>
 
-    <!-- GIFT OVERLAYS -->
     <div class="overlay" id="gift1">
         <div id="lottieCherry"></div>
         <h2 id="bloomText" style="color: #ff4d6d; font-family: 'Fredoka One'">Tap to Bloom</h2>
